@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/images/" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -16,14 +16,16 @@
       referrerpolicy="no-referrer"
     />
 
-    <title>Talent</title>
+    <title>Sync hackathon</title>
   </head>
-  <body>
+  <body class="bg-[url(/images/bg.png)] bg-center bg-no-repeat bg-cover">
     <!--------------------Navigation starts---------------------  -->
     <!-- <header
       class="fixed top-0 left-0 w-full z-50 bg-white border-b border-primaryColor"
     >
-      <nav class="container relative h-14 flex justify-between items-center">
+      <nav
+        class="container relative h-14 flex justify-between items-center pr-4 md:pr-0 "
+      >
         <div>
           <a href="#">
             <img src="/images/logo.png" alt="" srcset="" />
@@ -38,7 +40,7 @@
           >
             <li>
               <a
-                href="/"
+                href="#"
                 class="nav__link font-bold hover:text-buttonHover ease-in duration-200"
                 >Home</a
               >
@@ -59,7 +61,7 @@
             </li>
             <li>
               <a
-                href="#"
+                href="/talent/"
                 class="nav__link font-bold hover:text-buttonHover ease-in duration-200"
                 >Talent Management</a
               >
@@ -86,6 +88,160 @@
       </nav>
     </header> -->
     <!--------------------Navigation ends---------------------  -->
+
+    <!--------------------Hero begins---------------------  -->
+    <section class="pt-24 pl-4 pr-4 pb-4 md:pl-0 md:pr-0 font-sans">
+      <div class="container flex flex-col items-center gap-10">
+        <div class="w-[684px] h-[940px] bg-white rounded">
+          <img src="/images/FlowEase.png" alt="flowease logo" class="mx-auto" />
+          <h1
+            class="text-2xl text-textDeep leading-10 text-center pt-[18px] capitalize"
+          >
+            Sign up
+          </h1>
+          <div class="w-28 h-4  mt-[-15px] md:w-[391px]"></div>
+          <form class="mt-[94px] w-[391px] mx-auto">
+            <div class="relative">
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Full Name"
+                class=" peer h-[64px] w-full border-2 border-gray-300
+              text-textColor focus:outline-none font-sans pl-6
+              placeholder-transparent rounded-2xl "
+              />
+              <label
+                for="Full Name"
+                class="bg-white px-2 absolute left-6 -top-2 font-sans text-sm peer-placeholder-shown:text-base
+                peer-placeholder-shown: text-textColor
+                peer-placeholder-shown:top-5
+                transition all
+                peer-focus:-top-2
+                peer-focus:text-textColor
+                peer-focus:text-sm
+                "
+                >Full Name</label
+              >
+            </div>
+            <div class="mt-10 relative">
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Email"
+                class=" peer h-[64px] w-full border-2 border-gray-300
+              text-textColor focus:outline-none font-sans pl-6
+              placeholder-transparent rounded-2xl "
+              />
+              <label
+                for="Email"
+                class="bg-white px-2 absolute left-6 -top-2 font-sans text-sm peer-placeholder-shown:text-base
+                peer-placeholder-shown: text-textColor
+                peer-placeholder-shown:top-5
+                transition all
+                peer-focus:-top-2
+                peer-focus:text-textColor
+                peer-focus:text-sm
+                "
+                >Email</label
+              >
+            </div>
+            <div class="mt-10 relative">
+              <input
+                type="Password"
+                id="Password"
+                name="Password"
+                placeholder="Password"
+                class=" peer h-[64px] w-full border-2 border-gray-300 text-textColor focus:outline-none font-sans pl-6
+                placeholder-transparent rounded-2xl"
+              />
+              <label
+                for="password"
+                class="bg-white px-2 absolute left-6 -top-2 font-sans text-sm peer-placeholder-shown:text-base
+                peer-placeholder-shown: text-textColor
+                peer-placeholder-shown:top-5
+                transition all
+                peer-focus:-top-2
+                peer-focus:text-textColor
+                peer-focus:text-sm
+                "
+                >Password</label
+              >
+            </div>
+            <div class="mt-10 relative">
+              <input
+                type="Password"
+                id="confirm Password"
+                name="confirm Password"
+                placeholder="Confirm Password"
+                class=" peer h-[64px] w-full border-2 border-gray-300 text-textColor focus:outline-none font-sans pl-6
+                placeholder-transparent rounded-2xl"
+              />
+              <label
+                for="password"
+                class="bg-white px-2 absolute left-6 -top-2 font-sans text-sm peer-placeholder-shown:text-base
+                peer-placeholder-shown: text-textColor
+                peer-placeholder-shown:top-5
+                transition all
+                peer-focus:-top-2
+                peer-focus:text-textColor
+                peer-focus:text-sm
+                "
+                >Confirm Password</label
+              >
+            </div>
+            <div
+              class=" mt-[24px] flex flex-row gap-2 justify-between items-center"
+            >
+              <input
+                type="checkbox"
+                name="checkbox"
+                id="checkbox"
+                class="w-[32px] h-[32px]"
+              />
+              <p class="text-sm text-textColor font-sans">
+                By creating your account you agree to the
+                <a href="#" class="text-primaryColor">Terms of service</a> and
+                <a href="#" class="text-primaryColor">Policy</a>
+              </p>
+            </div>
+
+            <input
+              type="submit"
+              value="Signup"
+              class="mt-[46px] bg-primaryColor w-full h-[56px] text-white rounded-2xl cursor-pointer"
+            />
+            <div class="mt-[40px] flex flex-row justify-between gap-[13px]">
+              <div
+                class=" justify-around  border py-[18px] px-[41px] rounded-xl cursor-pointer"
+              >
+                <a href="#" class="flex flex-row items-center gap-[36px] ">
+                  <img src="/images/SVG.png" alt="google logo" />
+                  <p class="font-bold">Google</p>
+                </a>
+              </div>
+              <div
+                class=" justify-around  border py-[18px] px-[41px] rounded-xl cursor-pointer"
+              >
+                <a href="#" class="flex flex-row items-center gap-[36px] ">
+                  <img src="/images/ic_baseline-apple.png" alt="Apple logo" />
+                  <p class="font-bold">Apple</p>
+                </a>
+              </div>
+            </div>
+            <div class="mt-[40px]">
+              <p class="text-center text-sm text-textColor">
+                Already have an account?
+                <a href="/" class="font-bold cursor-pointer">Login</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------Hero ends---------------------  -->
     <script type="module" src="/signup/signup.js"></script>
   </body>
 </html>
