@@ -22,6 +22,7 @@ export default {
     colors: {
     secondaryColor: '#FD6B22',
     bgColor: '#ffffff',
+    bgSecondary:'#FDB090',
     textColor: '#6B6666',
     textDeep:'#1B1D21',
     primaryColor: '#FF4D02CC',
